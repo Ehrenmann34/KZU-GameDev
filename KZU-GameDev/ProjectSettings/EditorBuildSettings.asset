@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: a90bc8eded3cf4cf8b95d4cbae70c685
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/KZU-GameDev 15.3.unity
+    guid: 1dd854e7950d54b5797812cf19be030b
   m_configObjects: {}
