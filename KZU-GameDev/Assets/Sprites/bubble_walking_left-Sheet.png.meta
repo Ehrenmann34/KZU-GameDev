@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3d6a110c97f0043be9fae66c9e5de2af
+guid: c197fe4bb6b734082bbe861d1908f911
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,7 +106,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,12 +117,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bubble_facing_back-Sheet_0
+      name: bubble_walking_left-Sheet_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 7
         y: 1
-        width: 21
+        width: 17
         height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ad8cdbef96274cb8bc4b7b7c7961846
-      internalID: 980163520
+      spriteID: 3fccf1636907f4f3b80b0ec43b59acf6
+      internalID: 1896038717
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bubble_facing_back-Sheet_1
+      name: bubble_walking_left-Sheet_1
       rect:
         serializedVersion: 2
-        x: 37
+        x: 39
         y: 1
-        width: 21
-        height: 34
+        width: 17
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,19 +152,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b18c1ddf8425547d685acf056ab9b7e1
-      internalID: 727657455
+      spriteID: b8d56ce0bfd5a4a13934fdbf6f60c18f
+      internalID: -861008515
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bubble_facing_back-Sheet_2
+      name: bubble_walking_left-Sheet_2
       rect:
         serializedVersion: 2
-        x: 69
+        x: 71
         y: 1
-        width: 21
+        width: 17
         height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -173,19 +173,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7963cf0f9ec7e47b78306e3cd2b0a3a4
-      internalID: -337351660
+      spriteID: fe6014b6269b046b9ae8bf2a7b1c2d5a
+      internalID: -449976797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bubble_facing_back-Sheet_3
+      name: bubble_walking_left-Sheet_3
       rect:
         serializedVersion: 2
-        x: 101
+        x: 103
         y: 1
-        width: 21
+        width: 17
         height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -194,17 +194,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d02625266f6f4bff978526659afd88f
-      internalID: 760373073
+      spriteID: 26de96bf5e65b4f75b040e26313ae24a
+      internalID: 528102525
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bubble_facing_back-Sheet_4
+      name: bubble_walking_left-Sheet_4
       rect:
         serializedVersion: 2
-        x: 133
+        x: 132
         y: 1
         width: 21
         height: 34
@@ -215,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: adf25a48d626441df93b0780bca21ebe
-      internalID: -1193330249
+      spriteID: a1a18851b30ca480d93dfae5f187c4c4
+      internalID: -957517129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bubble_facing_back-Sheet_5
+      name: bubble_walking_left-Sheet_5
       rect:
         serializedVersion: 2
-        x: 165
+        x: 167
         y: 1
-        width: 21
-        height: 34
+        width: 17
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,19 +236,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a7a4a75254af45a292cfb491789f0fd
-      internalID: -1023215204
+      spriteID: 30f1326663613479395ff6d95274e1de
+      internalID: 1203730387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bubble_facing_back-Sheet_6
+      name: bubble_walking_left-Sheet_6
       rect:
         serializedVersion: 2
-        x: 197
+        x: 199
         y: 1
-        width: 21
+        width: 17
         height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -257,19 +257,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd8c7ad4c90cb48a799837823a949fa1
-      internalID: 1461574823
+      spriteID: 80e58c3f5b7e848758309b1a8f6b878d
+      internalID: 1285203956
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bubble_facing_back-Sheet_7
+      name: bubble_walking_left-Sheet_7
       rect:
         serializedVersion: 2
-        x: 229
+        x: 231
         y: 1
-        width: 21
+        width: 17
         height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -278,134 +278,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ed3f99ed1f62425d9846cc16b3322e4
-      internalID: 614497880
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bubble_facing_back-Sheet_8
-      rect:
-        serializedVersion: 2
-        x: 261
-        y: 1
-        width: 21
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74241a3b10e8b44b394595904e258b67
-      internalID: -255789143
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bubble_facing_back-Sheet_9
-      rect:
-        serializedVersion: 2
-        x: 293
-        y: 1
-        width: 21
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20428627d527141768873282e83d5f2e
-      internalID: -2048725513
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bubble_facing_back-Sheet_10
-      rect:
-        serializedVersion: 2
-        x: 325
-        y: 1
-        width: 21
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dab0674605c37414fb853e2a9020478b
-      internalID: 1476583483
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bubble_facing_back-Sheet_11
-      rect:
-        serializedVersion: 2
-        x: 357
-        y: 1
-        width: 21
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d8674ebf42274a2fa691f3e0ad202ce
-      internalID: -2043009751
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bubble_facing_back-Sheet_12
-      rect:
-        serializedVersion: 2
-        x: 389
-        y: 1
-        width: 21
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: be7220cb0b46d4b44a2fab02e4e9dfcb
-      internalID: 620240069
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bubble_facing_back-Sheet_13
-      rect:
-        serializedVersion: 2
-        x: 421
-        y: 1
-        width: 21
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 91faefc42d9f94ee392201eaa192fbba
-      internalID: -793494846
+      spriteID: f1fe07ee69d3b4650a8d9209ff3bd9ea
+      internalID: 354212626
       vertices: []
       indices: 
       edges: []
@@ -421,20 +295,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      bubble_facing_back-Sheet_0: 980163520
-      bubble_facing_back-Sheet_1: 727657455
-      bubble_facing_back-Sheet_10: 1476583483
-      bubble_facing_back-Sheet_11: -2043009751
-      bubble_facing_back-Sheet_12: 620240069
-      bubble_facing_back-Sheet_13: -793494846
-      bubble_facing_back-Sheet_2: -337351660
-      bubble_facing_back-Sheet_3: 760373073
-      bubble_facing_back-Sheet_4: -1193330249
-      bubble_facing_back-Sheet_5: -1023215204
-      bubble_facing_back-Sheet_6: 1461574823
-      bubble_facing_back-Sheet_7: 614497880
-      bubble_facing_back-Sheet_8: -255789143
-      bubble_facing_back-Sheet_9: -2048725513
+      bubble_walking_left-Sheet_0: 1896038717
+      bubble_walking_left-Sheet_1: -861008515
+      bubble_walking_left-Sheet_2: -449976797
+      bubble_walking_left-Sheet_3: 528102525
+      bubble_walking_left-Sheet_4: -957517129
+      bubble_walking_left-Sheet_5: 1203730387
+      bubble_walking_left-Sheet_6: 1285203956
+      bubble_walking_left-Sheet_7: 354212626
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
