@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c8a5e24f5d264a742b5db93d454c7d2e
+guid: af5ee561d6e643342b99c737d2300082
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tilemap bigger platten und wege und ecken-Sheet_0
+      name: tilemap bigger platten und wege mit treppen-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fe896b6ab8106144851b8338d0767d4
-      internalID: 81506326
+      spriteID: 05cb06069a8b6704b8445ac350455627
+      internalID: 24983699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege und ecken-Sheet_1
+      name: tilemap bigger platten und wege mit treppen-Sheet_1
       rect:
         serializedVersion: 2
         x: 48
@@ -140,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d314946513e59c45af2d82256a0f9b2
-      internalID: 2010839613
+      spriteID: 1cdb380919886444f936be47e3235b8a
+      internalID: 1123323305
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege und ecken-Sheet_2
+      name: tilemap bigger platten und wege mit treppen-Sheet_2
       rect:
         serializedVersion: 2
         x: 96
@@ -161,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ea33a975e5274345b07de7da19b1a0a
-      internalID: -1420820453
+      spriteID: 4ca7764d48d09dc45a6eaec47981e15e
+      internalID: -186303738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege und ecken-Sheet_3
+      name: tilemap bigger platten und wege mit treppen-Sheet_3
       rect:
         serializedVersion: 2
         x: 144
@@ -182,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a030677807d7d7a41a3883b8ccd38a8c
-      internalID: 494260387
+      spriteID: dfcf9a9aa8fe76c4993581c5f859cab7
+      internalID: 497421145
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege und ecken-Sheet_4
+      name: tilemap bigger platten und wege mit treppen-Sheet_4
       rect:
         serializedVersion: 2
         x: 192
@@ -203,14 +203,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 638b5439f93863b4fb23fe9b44db5183
-      internalID: 1094085166
+      spriteID: 75b9165d7fd0ecf49b0ca6c7d183c090
+      internalID: 905468236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege und ecken-Sheet_5
+      name: tilemap bigger platten und wege mit treppen-Sheet_5
       rect:
         serializedVersion: 2
         x: 240
@@ -224,14 +224,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9483d98abd8ff348843c4028fc56d18
-      internalID: 499870758
+      spriteID: d88884b2cdd941541af18e37bef813ed
+      internalID: 575038075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege und ecken-Sheet_6
+      name: tilemap bigger platten und wege mit treppen-Sheet_6
       rect:
         serializedVersion: 2
         x: 0
@@ -245,14 +245,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d95c53e41cdf3dd48a4ba0b7dea33b82
-      internalID: 1334597853
+      spriteID: 576e17e85f1da1d47ba628f1f2d850db
+      internalID: 557587848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege und ecken-Sheet_7
+      name: tilemap bigger platten und wege mit treppen-Sheet_7
       rect:
         serializedVersion: 2
         x: 48
@@ -266,14 +266,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7064b33c67c45854393d9fac8f94f973
-      internalID: -1586712342
+      spriteID: 0cb3c7ebf9631914d878ccc62e2b63c1
+      internalID: 1559981220
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege und ecken-Sheet_8
+      name: tilemap bigger platten und wege mit treppen-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 432
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9101ef6445ec74f439dc29bea8f66ed2
+      internalID: 2003666556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap bigger platten und wege mit treppen-Sheet_9
       rect:
         serializedVersion: 2
         x: 144
@@ -287,14 +308,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54c1242c73e1b4f409675785483a567d
-      internalID: 604442322
+      spriteID: 19e28d9b62856d749b0ad20ab9c48d30
+      internalID: 50692693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege und ecken-Sheet_9
+      name: tilemap bigger platten und wege mit treppen-Sheet_10
       rect:
         serializedVersion: 2
         x: 192
@@ -308,14 +329,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3132e51401209042983a07cdfaa7c0c
-      internalID: -1348809164
+      spriteID: 07104e245f74bd04f801a3cd6aebc2b4
+      internalID: 1120706192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege und ecken-Sheet_10
+      name: tilemap bigger platten und wege mit treppen-Sheet_11
       rect:
         serializedVersion: 2
         x: 240
@@ -329,14 +350,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 640da5b85d2132e45802cf5d96830a43
-      internalID: 1340878267
+      spriteID: d63471063c75c954995710f76ae48b16
+      internalID: 647515705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege und ecken-Sheet_11
+      name: tilemap bigger platten und wege mit treppen-Sheet_12
       rect:
         serializedVersion: 2
         x: 0
@@ -350,14 +371,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8b3046350320b84f8020b0c60400832
-      internalID: -613156924
+      spriteID: 6907c22486b6fd44087ee65f7fe894f4
+      internalID: -841896431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege und ecken-Sheet_12
+      name: tilemap bigger platten und wege mit treppen-Sheet_13
       rect:
         serializedVersion: 2
         x: 48
@@ -371,14 +392,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4de0256448a472b4c9ca9459857ac621
-      internalID: -36723852
+      spriteID: 1a6e6982ba18580449d3057d3ed93abe
+      internalID: 1494288881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege und ecken-Sheet_13
+      name: tilemap bigger platten und wege mit treppen-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f68133ed822ae849aa351dd6367ac5b
+      internalID: 1597584890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap bigger platten und wege mit treppen-Sheet_15
       rect:
         serializedVersion: 2
         x: 144
@@ -392,14 +434,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bd81712d5b0e104b972652aeda22d65
-      internalID: 699164788
+      spriteID: 398f0a2d99aa68b4d8e7013fdc784082
+      internalID: -1501132526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege und ecken-Sheet_14
+      name: tilemap bigger platten und wege mit treppen-Sheet_16
       rect:
         serializedVersion: 2
         x: 192
@@ -413,14 +455,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bda810bc0e7f434eb80fd7275c8dcd8
-      internalID: -580856264
+      spriteID: 3fce1d0b8a6839342827b60ec77e974f
+      internalID: -1420223423
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege und ecken-Sheet_15
+      name: tilemap bigger platten und wege mit treppen-Sheet_17
       rect:
         serializedVersion: 2
         x: 240
@@ -434,14 +476,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 999bdf0507108c746aa3212938b64a60
-      internalID: 2060708520
+      spriteID: 4cbb63c59bee9fb42a238ca1da9c6281
+      internalID: 848048738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege und ecken-Sheet_16
+      name: tilemap bigger platten und wege mit treppen-Sheet_18
       rect:
         serializedVersion: 2
         x: 0
@@ -455,14 +497,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b68c159e9ddf06e419c554124aa1d9e8
-      internalID: -321404601
+      spriteID: 0d7702719e991234ab9a2cd2d0452bf7
+      internalID: 1850726942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege und ecken-Sheet_17
+      name: tilemap bigger platten und wege mit treppen-Sheet_19
       rect:
         serializedVersion: 2
         x: 48
@@ -476,14 +518,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8a91ad4bab332f40a1a2913e06d8b91
-      internalID: 13559691
+      spriteID: d6e3fe410eae5de4d9ecb8e5a146f811
+      internalID: -1754198478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege und ecken-Sheet_18
+      name: tilemap bigger platten und wege mit treppen-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f2039258edcef74094d874281d8d425
+      internalID: 850100408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap bigger platten und wege mit treppen-Sheet_21
       rect:
         serializedVersion: 2
         x: 192
@@ -497,14 +560,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18797c1ae4583d34c82dfa78f9738b4c
-      internalID: -2127149200
+      spriteID: fb3d0af18a9e1ab48b1a51e94719d56c
+      internalID: -583157681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege und ecken-Sheet_19
+      name: tilemap bigger platten und wege mit treppen-Sheet_22
       rect:
         serializedVersion: 2
         x: 240
@@ -518,14 +581,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63f05f0229ec79e4ca72b30e8908bd42
-      internalID: 1531625160
+      spriteID: 9e5cf56fdb043944b95ff5a9b8fa3921
+      internalID: -2012421316
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege und ecken-Sheet_20
+      name: tilemap bigger platten und wege mit treppen-Sheet_23
       rect:
         serializedVersion: 2
         x: 0
@@ -539,14 +602,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a617993dbd560fc4897484e93a732302
-      internalID: -1355881094
+      spriteID: 98b1cc0823827824c9c0bfa566a04382
+      internalID: -221375427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege und ecken-Sheet_21
+      name: tilemap bigger platten und wege mit treppen-Sheet_24
       rect:
         serializedVersion: 2
         x: 48
@@ -560,8 +623,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97acb5b8be21a684cb316250a945a6ee
-      internalID: 1270976088
+      spriteID: b664e4860a8463b42bb5624f48bc43fc
+      internalID: 736267897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap bigger platten und wege mit treppen-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f70413f416aac42a9d6fd65b5a1bc8
+      internalID: 670351389
       vertices: []
       indices: 
       edges: []
@@ -577,28 +661,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      tilemap bigger platten und wege und ecken-Sheet_18: -2127149200
-      tilemap bigger platten und wege und ecken-Sheet_14: -580856264
-      tilemap bigger platten und wege und ecken-Sheet_9: -1348809164
-      tilemap bigger platten und wege und ecken-Sheet_12: -36723852
-      tilemap bigger platten und wege und ecken-Sheet_8: 604442322
-      tilemap bigger platten und wege und ecken-Sheet_5: 499870758
-      tilemap bigger platten und wege und ecken-Sheet_13: 699164788
-      tilemap bigger platten und wege und ecken-Sheet_15: 2060708520
-      tilemap bigger platten und wege und ecken-Sheet_17: 13559691
-      tilemap bigger platten und wege und ecken-Sheet_19: 1531625160
-      tilemap bigger platten und wege und ecken-Sheet_10: 1340878267
-      tilemap bigger platten und wege und ecken-Sheet_6: 1334597853
-      tilemap bigger platten und wege und ecken-Sheet_1: 2010839613
-      tilemap bigger platten und wege und ecken-Sheet_4: 1094085166
-      tilemap bigger platten und wege und ecken-Sheet_2: -1420820453
-      tilemap bigger platten und wege und ecken-Sheet_0: 81506326
-      tilemap bigger platten und wege und ecken-Sheet_16: -321404601
-      tilemap bigger platten und wege und ecken-Sheet_21: 1270976088
-      tilemap bigger platten und wege und ecken-Sheet_7: -1586712342
-      tilemap bigger platten und wege und ecken-Sheet_3: 494260387
-      tilemap bigger platten und wege und ecken-Sheet_20: -1355881094
-      tilemap bigger platten und wege und ecken-Sheet_11: -613156924
+      tilemap bigger platten und wege mit treppen-Sheet_5: 575038075
+      tilemap bigger platten und wege mit treppen-Sheet_8: 2003666556
+      tilemap bigger platten und wege mit treppen-Sheet_24: 736267897
+      tilemap bigger platten und wege mit treppen-Sheet_0: 24983699
+      tilemap bigger platten und wege mit treppen-Sheet_16: -1420223423
+      tilemap bigger platten und wege mit treppen-Sheet_4: 905468236
+      tilemap bigger platten und wege mit treppen-Sheet_17: 848048738
+      tilemap bigger platten und wege mit treppen-Sheet_23: -221375427
+      tilemap bigger platten und wege mit treppen-Sheet_7: 1559981220
+      tilemap bigger platten und wege mit treppen-Sheet_6: 557587848
+      tilemap bigger platten und wege mit treppen-Sheet_25: 670351389
+      tilemap bigger platten und wege mit treppen-Sheet_2: -186303738
+      tilemap bigger platten und wege mit treppen-Sheet_9: 50692693
+      tilemap bigger platten und wege mit treppen-Sheet_15: -1501132526
+      tilemap bigger platten und wege mit treppen-Sheet_21: -583157681
+      tilemap bigger platten und wege mit treppen-Sheet_18: 1850726942
+      tilemap bigger platten und wege mit treppen-Sheet_14: 1597584890
+      tilemap bigger platten und wege mit treppen-Sheet_3: 497421145
+      tilemap bigger platten und wege mit treppen-Sheet_10: 1120706192
+      tilemap bigger platten und wege mit treppen-Sheet_11: 647515705
+      tilemap bigger platten und wege mit treppen-Sheet_13: 1494288881
+      tilemap bigger platten und wege mit treppen-Sheet_22: -2012421316
+      tilemap bigger platten und wege mit treppen-Sheet_19: -1754198478
+      tilemap bigger platten und wege mit treppen-Sheet_12: -841896431
+      tilemap bigger platten und wege mit treppen-Sheet_1: 1123323305
+      tilemap bigger platten und wege mit treppen-Sheet_20: 850100408
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
