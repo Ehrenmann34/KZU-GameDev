@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 04a8c16417a24134f824bc502a52a1f8
+guid: 98ab8effdf5fd594b854173ddac85b9e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tilemap bigger platten und wege-Sheet_0
+      name: tilemap bigger platten und wege-Sheet 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 018f3c97ecf067e4885bfee3a8a55b99
-      internalID: -140541124
+      spriteID: d5a7840700c3c8f4ca4807237195f7f1
+      internalID: 1560015010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege-Sheet_1
+      name: tilemap bigger platten und wege-Sheet 1_1
       rect:
         serializedVersion: 2
         x: 48
@@ -140,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97a9c837757fae74b909c9790d7ab319
-      internalID: 547294925
+      spriteID: fc005faa503a87c469c62356834f4a00
+      internalID: -583465536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege-Sheet_2
+      name: tilemap bigger platten und wege-Sheet 1_2
       rect:
         serializedVersion: 2
         x: 96
@@ -161,18 +161,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b48a4680907545469f22547319d1279
-      internalID: 1752170280
+      spriteID: 7e9b3dff13bc4e4479425f44f39a8d0f
+      internalID: 508159662
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege-Sheet_3
+      name: tilemap bigger platten und wege-Sheet 1_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 432
+        x: 144
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -182,14 +182,56 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 790795de4541bd74fb1d087ec4ff62d9
-      internalID: 380754832
+      spriteID: eaad5bff39f5dcf4886b569f1ecdcd3a
+      internalID: -1831202412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege-Sheet_4
+      name: tilemap bigger platten und wege-Sheet 1_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40d28319f4274c4bafb8aad760e75a3
+      internalID: -560773002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap bigger platten und wege-Sheet 1_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eed73a76701fc14db675123fd693c18
+      internalID: 566701851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap bigger platten und wege-Sheet 1_6
       rect:
         serializedVersion: 2
         x: 48
@@ -203,14 +245,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4cf5b0151f86f140b244e73483f359b
-      internalID: 1104107845
+      spriteID: a11a6365a4ef610458b9d5594ada4221
+      internalID: -526318147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege-Sheet_5
+      name: tilemap bigger platten und wege-Sheet 1_7
       rect:
         serializedVersion: 2
         x: 96
@@ -224,14 +266,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6853e7e573fbe5449b2a3c240e84fcf
-      internalID: 2028836348
+      spriteID: b507ad1de62fda043b0819a01a322288
+      internalID: 651117975
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege-Sheet_6
+      name: tilemap bigger platten und wege-Sheet 1_8
       rect:
         serializedVersion: 2
         x: 144
@@ -245,14 +287,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2402cf1616f9b842a094ef1d1eeb92b
-      internalID: 1758717866
+      spriteID: c4d775b94c632e44a971dbc814412251
+      internalID: 1054869883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege-Sheet_7
+      name: tilemap bigger platten und wege-Sheet 1_9
       rect:
         serializedVersion: 2
         x: 192
@@ -266,14 +308,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90bcce39015430445bcd7a686a5cc53e
-      internalID: 1313868834
+      spriteID: 586b00a2b8a9031478bc819e561b2b5d
+      internalID: 1595813092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege-Sheet_8
+      name: tilemap bigger platten und wege-Sheet 1_10
       rect:
         serializedVersion: 2
         x: 240
@@ -287,35 +329,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00c147c02f0c92e4d944fbcee6a48c5a
-      internalID: -1854762491
+      spriteID: 66043ceab731d68408e6f238baeb715b
+      internalID: 473311542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege-Sheet_9
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 384
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0ab839c394c62b94cb2e2fb23c541650
-      internalID: 989608982
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tilemap bigger platten und wege-Sheet_10
+      name: tilemap bigger platten und wege-Sheet 1_11
       rect:
         serializedVersion: 2
         x: 48
@@ -329,14 +350,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 742abac5bdd59ae47821e41e8a739434
-      internalID: -391650893
+      spriteID: 912948573d3278346adb8e7112eb182e
+      internalID: 391704441
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege-Sheet_11
+      name: tilemap bigger platten und wege-Sheet 1_12
       rect:
         serializedVersion: 2
         x: 96
@@ -350,14 +371,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae41bce1067f83e49a7ce52013d09c8c
-      internalID: 316279078
+      spriteID: 5258b31386a111b4e9688c5333e33871
+      internalID: -1207063844
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege-Sheet_12
+      name: tilemap bigger platten und wege-Sheet 1_13
       rect:
         serializedVersion: 2
         x: 144
@@ -371,14 +392,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c12305daac31f0a49ba0d24755901c98
-      internalID: -991172802
+      spriteID: 3ec6d484e14bb5841b2fb9820637bd8e
+      internalID: -1873679228
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege-Sheet_13
+      name: tilemap bigger platten und wege-Sheet 1_14
       rect:
         serializedVersion: 2
         x: 192
@@ -392,14 +413,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07830ccc3ac8da94fa3e0994fca9df90
-      internalID: 1975161143
+      spriteID: 36f2c5b2570935e4d9d223176072834d
+      internalID: -1358023571
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap bigger platten und wege-Sheet_14
+      name: tilemap bigger platten und wege-Sheet 1_15
       rect:
         serializedVersion: 2
         x: 240
@@ -413,8 +434,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20d991ca24d62e845ba0e9c66c2bcd0b
-      internalID: -1675537873
+      spriteID: 909bb30908a524144b5232a715fbed8e
+      internalID: 582735568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap bigger platten und wege-Sheet 1_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68ad2b1e30cda6488ecd2f0f2264fd2
+      internalID: 540677906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap bigger platten und wege-Sheet 1_17
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f07b20d49241cb468fce9becfc73135
+      internalID: 1016589421
       vertices: []
       indices: 
       edges: []
@@ -430,21 +493,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      tilemap bigger platten und wege-Sheet_1: 547294925
-      tilemap bigger platten und wege-Sheet_5: 2028836348
-      tilemap bigger platten und wege-Sheet_14: -1675537873
-      tilemap bigger platten und wege-Sheet_9: 989608982
-      tilemap bigger platten und wege-Sheet_3: 380754832
-      tilemap bigger platten und wege-Sheet_6: 1758717866
-      tilemap bigger platten und wege-Sheet_8: -1854762491
-      tilemap bigger platten und wege-Sheet_2: 1752170280
-      tilemap bigger platten und wege-Sheet_10: -391650893
-      tilemap bigger platten und wege-Sheet_4: 1104107845
-      tilemap bigger platten und wege-Sheet_7: 1313868834
-      tilemap bigger platten und wege-Sheet_12: -991172802
-      tilemap bigger platten und wege-Sheet_0: -140541124
-      tilemap bigger platten und wege-Sheet_11: 316279078
-      tilemap bigger platten und wege-Sheet_13: 1975161143
+      tilemap bigger platten und wege-Sheet 1_12: -1207063844
+      tilemap bigger platten und wege-Sheet 1_5: 566701851
+      tilemap bigger platten und wege-Sheet 1_16: 540677906
+      tilemap bigger platten und wege-Sheet 1_4: -560773002
+      tilemap bigger platten und wege-Sheet 1_17: 1016589421
+      tilemap bigger platten und wege-Sheet 1_15: 582735568
+      tilemap bigger platten und wege-Sheet 1_8: 1054869883
+      tilemap bigger platten und wege-Sheet 1_1: -583465536
+      tilemap bigger platten und wege-Sheet 1_13: -1873679228
+      tilemap bigger platten und wege-Sheet 1_10: 473311542
+      tilemap bigger platten und wege-Sheet 1_7: 651117975
+      tilemap bigger platten und wege-Sheet 1_2: 508159662
+      tilemap bigger platten und wege-Sheet 1_14: -1358023571
+      tilemap bigger platten und wege-Sheet 1_6: -526318147
+      tilemap bigger platten und wege-Sheet 1_9: 1595813092
+      tilemap bigger platten und wege-Sheet 1_0: 1560015010
+      tilemap bigger platten und wege-Sheet 1_3: -1831202412
+      tilemap bigger platten und wege-Sheet 1_11: 391704441
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
