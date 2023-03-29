@@ -7,6 +7,9 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5f;
 
     [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Animator animator;
+
+    private bool facingRight;
 
     void Start()
     {
@@ -23,7 +26,26 @@ public class PlayerMovement : MonoBehaviour
         {
             movement = movement.normalized;
         }
-
+        
         rb.velocity = movement * speed;
+
+        if (horizontal > 0.1 && !facingRight)
+        {
+            Flip();
+        }
+
+        if (horizontal < -0.1 && facingRight)
+        {
+            Flip();
+        }
+    }
+
+    void Flip()
+    {
+        Vector3 currentScale = gameObject.transform.localScale;
+        currentScale.x *= -1;
+        gameObject.transform.localScale = currentScale;
+
+        facingRight = !facingRight;
     }
 }
