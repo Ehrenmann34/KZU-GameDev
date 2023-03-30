@@ -29,14 +29,48 @@ public class PlayerMovement : MonoBehaviour
         
         rb.velocity = movement * speed;
 
-        if (horizontal > 0.1 && !facingRight)
+        if (horizontal > 0.1f && !facingRight)
         {
             Flip();
         }
 
-        if (horizontal < -0.1 && facingRight)
+        if (horizontal < -0.1f && facingRight)
         {
             Flip();
+        }
+
+
+        //Animations
+
+        //Walking sideways
+        if (horizontal != 0f)
+        {
+            animator.SetBool("walking sideways", true);
+        }
+        else
+        {
+            animator.SetBool("walking sideways", false);
+        }
+
+        //Walking up and down
+        if (vertical < -0.1f)
+        {
+            animator.SetBool("walking front", true);
+        }
+        else if (vertical > 0.1f)
+        {
+            animator.SetBool("walking back", true);
+        }
+        else
+        {
+            animator.SetBool("walking front", false);
+            animator.SetBool("walking back", false);
+        }
+
+        if (animator.GetBool("walking sideways") == true)
+        {
+            animator.SetBool("walking front", false);
+            animator.SetBool("walking back", false);
         }
     }
 
@@ -47,5 +81,5 @@ public class PlayerMovement : MonoBehaviour
         gameObject.transform.localScale = currentScale;
 
         facingRight = !facingRight;
-    }
+    }  
 }
