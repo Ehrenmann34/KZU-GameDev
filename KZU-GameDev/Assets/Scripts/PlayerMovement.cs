@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Animator animator;
+    [SerializeField] private float latency;
 
     private bool facingRight;
 
@@ -42,35 +43,16 @@ public class PlayerMovement : MonoBehaviour
 
         //Animations
 
-        //Walking sideways
-        if (horizontal != 0f)
+        animator.SetFloat("InputHorizontal", horizontal);
+        animator.SetFloat("InputVertical", vertical);
+        
+        if (horizontal != 0 || vertical != 0)
         {
-            animator.SetBool("walking sideways", true);
+            animator.SetBool("IsMoving", true);
         }
         else
         {
-            animator.SetBool("walking sideways", false);
-        }
-
-        //Walking up and down
-        if (vertical < -0.1f)
-        {
-            animator.SetBool("walking front", true);
-        }
-        else if (vertical > 0.1f)
-        {
-            animator.SetBool("walking back", true);
-        }
-        else
-        {
-            animator.SetBool("walking front", false);
-            animator.SetBool("walking back", false);
-        }
-
-        if (animator.GetBool("walking sideways") == true)
-        {
-            animator.SetBool("walking front", false);
-            animator.SetBool("walking back", false);
+            animator.SetBool("IsMoving", false);
         }
     }
 
