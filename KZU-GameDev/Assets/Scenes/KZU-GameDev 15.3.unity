@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 839671783}
   - component: {fileID: 839671782}
   - component: {fileID: 839671785}
+  - component: {fileID: 839671786}
   m_Layer: 0
   m_Name: NPC1
   m_TagString: Untagged
@@ -245,7 +246,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 273253301, guid: 0dc949f1a2cc2468bbf12de4366681a9, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.9477272, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -291,6 +292,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &839671786
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839671781}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3b3753a6980294541827ca78780797ff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1338121282
 GameObject:
   m_ObjectHideFlags: 0
@@ -2077,7 +2098,6 @@ MonoBehaviour:
   speed: 1.5
   rb: {fileID: 2103175611}
   animator: {fileID: 2103175615}
-  latency: 0
 --- !u!50 &2103175611
 Rigidbody2D:
   serializedVersion: 4

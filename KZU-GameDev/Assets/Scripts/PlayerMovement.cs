@@ -8,7 +8,6 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Animator animator;
-    [SerializeField] private float latency;
 
     private bool facingRight;
 
@@ -54,6 +53,26 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("IsMoving", false);
         }
+
+        if (vertical < 0f)
+        {
+            animator.SetBool("isWalkingDown", true);
+        }
+
+        if (animator.GetBool("isWalkingDown") && vertical < 0f)
+        {
+            
+        }
+        else
+        {
+            StartCoroutine(ResetIsWalkingDownAfterDelay());
+        }
+    }
+
+    private IEnumerator ResetIsWalkingDownAfterDelay()
+    {
+            yield return new WaitForSeconds(0.1f);
+            animator.SetBool("isWalkingDown", false);
     }
 
     void Flip()
