@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: tilemap bigger platten und wege-Sheet_11
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 316279078, guid: 04a8c16417a24134f824bc502a52a1f8, type: 3}
+  m_Sprite: {fileID: 487776291, guid: e9ecb386b9a1e954d86522d2cbff0367, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
