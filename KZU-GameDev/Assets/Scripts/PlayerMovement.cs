@@ -58,22 +58,12 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("isWalkingDown", true);
         }
-
-        if (animator.GetBool("isWalkingDown") && vertical < 0f)
+        
+        if (vertical > 0f)
         {
-            
-        }
-        else
-        {
-            StartCoroutine(ResetIsWalkingDownAfterDelay());
-        }
-    }
-
-    private IEnumerator ResetIsWalkingDownAfterDelay()
-    {
-            yield return new WaitForSeconds(0.1f);
             animator.SetBool("isWalkingDown", false);
-    }
+        }
+        
 
     void Flip()
     {
@@ -83,4 +73,6 @@ public class PlayerMovement : MonoBehaviour
 
         facingRight = !facingRight;
     }  
+    
+    }
 }
