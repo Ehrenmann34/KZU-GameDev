@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: tilemap bigger platten und wege-Sheet_23
+  m_Name: tilemap bigger platten und wege-Sheet_49
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -1813573441, guid: ab7fbc7550a68ae459ecf2fb793649a1, type: 3}
+  m_Sprite: {fileID: 305872884, guid: ab7fbc7550a68ae459ecf2fb793649a1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
