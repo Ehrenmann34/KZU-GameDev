@@ -1199,7 +1199,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2.0979257
+  orthographic size: 2.3427565
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1256,8 +1256,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AssetsPPU: 32
-  m_RefResolutionX: 336
-  m_RefResolutionY: 189
+  m_RefResolutionX: 272
+  m_RefResolutionY: 153
   m_UpscaleRT: 0
   m_PixelSnapping: 0
   m_CropFrameX: 0
@@ -11845,8 +11845,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.019415785}
-  m_Size: {x: 0.22652082, y: 0.14120992}
+  m_Offset: {x: -0.0008452035, y: -0.0801815}
+  m_Size: {x: 0.21808547, y: 0.15472017}
   m_Direction: 1
 --- !u!212 &2103175613
 SpriteRenderer:
