@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 5f;
+    public float speed = 1.5f;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Animator animator;
@@ -22,7 +22,10 @@ public class PlayerMovement : MonoBehaviour
         {
             speed = 0f;
         }
-            
+        else
+        {
+            speed = 1.5f;
+        }
 
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
@@ -35,6 +38,13 @@ public class PlayerMovement : MonoBehaviour
         
         rb.velocity = movement * speed;
 
+        if (DialogueManager.isActive == true)
+            animator.SetBool("IsMoving", false);
+
+        if (DialogueManager.isActive == true)
+            return;
+ 
+
         if (horizontal > 0.1f && !facingRight)
         {
             Flip();
@@ -45,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
             Flip();
         }
 
+        
 
         //Animations
 
@@ -70,7 +81,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isWalkingDown", false);
         }
         
-
+        
     void Flip()
     {
         Vector3 currentScale = gameObject.transform.localScale;
