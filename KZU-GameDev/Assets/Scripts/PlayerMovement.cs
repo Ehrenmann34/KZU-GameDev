@@ -18,6 +18,12 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (DialogueManager.isActive == true)
+        {
+            speed = 0f;
+        }
+            
+
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
         Vector2 movement = new Vector2(horizontal, vertical);

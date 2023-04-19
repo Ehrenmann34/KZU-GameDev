@@ -772,6 +772,7 @@ GameObject:
   - component: {fileID: 839671785}
   - component: {fileID: 839671786}
   - component: {fileID: 839671787}
+  - component: {fileID: 839671788}
   m_Layer: 0
   m_Name: NPC1
   m_TagString: Untagged
@@ -927,6 +928,19 @@ MonoBehaviour:
     sprite: {fileID: 0}
   - name: Bubbles
     sprite: {fileID: 0}
+--- !u!114 &839671788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839671781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e83867b34b6114e29a391834fb9d6ff0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 839671787}
 --- !u!1 &931368700
 GameObject:
   m_ObjectHideFlags: 0
