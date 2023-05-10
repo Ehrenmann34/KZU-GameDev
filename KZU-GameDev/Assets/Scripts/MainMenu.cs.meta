@@ -3,7 +3,9 @@ guid: 20850d897c235457a8e5808a2b26b86f
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Bubbles: {fileID: 6734806362676098762, guid: 2a90bc6a105fb457188aaa8af13c18f4, type: 3}
+  - Fynn: {fileID: 4414257926090985469, guid: 9d722d3fef6b5490f8100b60b350b880, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
