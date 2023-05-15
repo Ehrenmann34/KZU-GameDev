@@ -21,7 +21,7 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 273253301, guid: 0dc949f1a2cc2468bbf12de4366681a9, type: 3}
-    - time: 0.16666667
+    - time: 0.15
       value: {fileID: -2031375591, guid: 0dc949f1a2cc2468bbf12de4366681a9, type: 3}
     - time: 0.28333333
       value: {fileID: -1114770879, guid: 0dc949f1a2cc2468bbf12de4366681a9, type: 3}
@@ -43,7 +43,7 @@ AnimationClip:
       value: {fileID: 2139767302, guid: 0dc949f1a2cc2468bbf12de4366681a9, type: 3}
     - time: 1.55
       value: {fileID: -1405464188, guid: 0dc949f1a2cc2468bbf12de4366681a9, type: 3}
-    - time: 1.6666666
+    - time: 1.6833333
       value: {fileID: -2062998656, guid: 0dc949f1a2cc2468bbf12de4366681a9, type: 3}
     - time: 1.8333334
       value: {fileID: -358227046, guid: 0dc949f1a2cc2468bbf12de4366681a9, type: 3}
