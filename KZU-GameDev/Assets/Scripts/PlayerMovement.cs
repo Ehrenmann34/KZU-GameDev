@@ -41,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = movement * speed;
 
         if (DialogueManager.isActive == true)
-            animator.SetBool("IsMoving", false);
+            animator.SetBool("isMoving", false);
 
         if (DialogueManager.isActive == true)
             return;
@@ -64,26 +64,38 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("InputHorizontal", horizontal);
         animator.SetFloat("InputVertical", vertical);
         
-        if (horizontal != 0 || vertical > 0.1 || vertical < -0.9)
+        if (horizontal != 0 || vertical != 0)
         {
-            animator.SetBool("IsMoving", true);
+            animator.SetBool("isMoving", true);
         }
         else
         {
-            animator.SetBool("IsMoving", false);
+            animator.SetBool("isMoving", false);
         }
-
-        if (vertical < 0f)
+       
+       
+        if (horizontal == 0 && vertical < -0.1)
         {
             animator.SetBool("isWalkingDown", true);
         }
-        
-        if (vertical > 0f)
+        else if(vertical > 0.1 || horizontal != 0)
         {
             animator.SetBool("isWalkingDown", false);
         }
         
         
+        if (horizontal == 0 && vertical > 0.1)
+        {
+            animator.SetBool("isWalkingUp", true);
+        }
+        else if(vertical < -0.1 || horizontal != 0)
+        {
+            animator.SetBool("isWalkingUp", false);
+        }
+
+
+
+
     void Flip()
     {
         Vector3 currentScale = gameObject.transform.localScale;
