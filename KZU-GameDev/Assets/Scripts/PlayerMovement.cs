@@ -9,11 +9,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Animator animator;
 
+
+
     private bool facingRight;
 
     void Start()
     {
-    
+        
     }
 
     void FixedUpdate()

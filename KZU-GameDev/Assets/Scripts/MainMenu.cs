@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     
-    public GameObject Bubbles;
-    public GameObject Fynn;
+    public static bool bubblesSpawn = false;
+    public static bool fynnSpawn = false;
     
     public void PlayGame()
     {
@@ -21,14 +21,14 @@ public class MainMenu : MonoBehaviour
 
     public void SpawnBubbles()
     {
-        Instantiate(Bubbles); //muss man noch zugreifen können
-        SceneManager.MoveGameObjectToScene(Bubbles, SceneManager.GetSceneByName("KZU-Game Dev"));
+        bubblesSpawn = true;
+        fynnSpawn = false;
     }
 
     public void SpawnFynn()
     {
-        Instantiate(Fynn);
-        SceneManager.MoveGameObjectToScene(Fynn, SceneManager.GetSceneByName("KZU-Game Dev"));
+        fynnSpawn = true;
+        bubblesSpawn = false;
     }
     
 }
