@@ -6,6 +6,7 @@ public class Pickup : MonoBehaviour
 {
     private Inventory inventory;
     public GameObject itemSymbol;
+    private bool itemAdded = false;
 
     private void Start()
     {
@@ -20,12 +21,16 @@ public class Pickup : MonoBehaviour
             {
                 if (inventory.isFull[i] == false)
                 {
-                    //Item can be added to inventory
+                    // Item can be added to inventory
                     inventory.isFull[i] = true;
                     Instantiate(itemSymbol, inventory.slots[i].transform, false);
-                    Destroy(gameObject);
+                    itemAdded = true;
                     break;
                 }
+            }
+            if (itemAdded)
+            {
+                Destroy(gameObject);
             }
         }
     }
