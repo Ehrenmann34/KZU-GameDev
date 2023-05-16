@@ -3457,8 +3457,6 @@ GameObject:
   - component: {fileID: 534109237}
   - component: {fileID: 534109236}
   - component: {fileID: 534109235}
-  - component: {fileID: 534109234}
-  - component: {fileID: 534109233}
   - component: {fileID: 534109232}
   m_Layer: 0
   m_Name: NPCHausmeister
@@ -3480,49 +3478,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: {fileID: 534109235}
---- !u!114 &534109233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534109231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 048720e4f53aa43898b6cbfe539ca8ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messages:
-  - actorID: 0
-    message: "Oh, es sieht so aus, als h\xE4ttest du noch nicht allen M\xFCll eingesammelt.
-      Bleib dran!"
-  actors:
-  - name: Hauswart Peter
-    sprite: {fileID: 0}
---- !u!114 &534109234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534109231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 048720e4f53aa43898b6cbfe539ca8ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messages:
-  - actorID: 1
-    message: So, ich bin fertig. Der Pausenhof ist jetzt wieder sauber.
-  - actorID: 0
-    message: Super, vielen Dank! Auf Wiedersehen!
-  - actorID: 1
-    message: Auf Wiedersehen!
-  actors:
-  - name: Hauswart Peter
-    sprite: {fileID: 0}
-  - name: Du
-    sprite: {fileID: 0}
 --- !u!114 &534109235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3535,25 +3490,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 048720e4f53aa43898b6cbfe539ca8ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  messages:
-  - actorID: 1
-    message: Guten Tag, Hauswart Peter. Wie geht es Ihnen?
-  - actorID: 0
-    message: "Hallo! Mir geht es gut, aber der Pausenhof sieht schrecklich aus. Kannt
-      du mir helfen, ihn zu s\xE4ubern?"
-  - actorID: 1
-    message: Klar, ich hele gerne. Was soll ich tun?
-  - actorID: 0
-    message: "Du musst nur den M\xFCll aufsammeln."
-  - actorID: 1
-    message: Okay, ich werde mein Bestes geben.
-  - actorID: 1
-    message: Vielen Dank! Melde dich bei mir, wenn du fertig bist.
-  actors:
-  - name: Hauswart Peter
-    sprite: {fileID: 0}
-  - name: Du
-    sprite: {fileID: 0}
+  rose: {fileID: 0}
+  slot1: {fileID: 0}
+  messages1: []
+  actors1: []
+  messages2: []
+  actors2: []
+  messages3: []
+  actors3: []
+  messages4: []
+  actors4: []
 --- !u!95 &534109236
 Animator:
   serializedVersion: 5
@@ -5014,27 +4960,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 048720e4f53aa43898b6cbfe539ca8ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  messages:
-  - actorID: 0
-    message: "Hallo, ich bin ziemlich verzweifelt. Ich habe zum R\xF6selitag eine
-      Rose geschenkt bekommen und diese nun verloren. K\xF6nntest du mir vielleicht
-      helfen, sie zu finden? "
-  - actorID: 1
-    message: "Nat\xFCrlich, ich helfe dir gerne. Wo hast du die Rose das letzte Mal
-      gesehen?  "
-  - actorID: 0
-    message: "Ich denke in der N\xE4he der Mensa. Ich denke, ich habe sie dort fallen
-      lassen, als ich mein Zn\xFCni gekauft habe. "
-  - actorID: 1
-    message: "Gut, ich werde mich auf die Suche machen und hoffentlich bald zur\xFCck
-      sein."
-  - actorID: 0
-    message: Vielen Dank!
-  actors:
-  - name: NPC
-    sprite: {fileID: 0}
-  - name: Du
-    sprite: {fileID: 0}
+  rose: {fileID: 0}
+  slot1: {fileID: 0}
+  messages1: []
+  actors1: []
+  messages2: []
+  actors2: []
+  messages3: []
+  actors3: []
+  messages4: []
+  actors4: []
 --- !u!114 &839671788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5060,15 +4995,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 048720e4f53aa43898b6cbfe539ca8ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  messages:
-  - actorID: 0
-    message: "Oh, du hast sie noch nicht gefunden. Sie ist in der N\xE4he des Eingangs
-      von der Mensa. Viel Erfolg!"
-  actors:
-  - name: NPC
-    sprite: {fileID: 0}
-  - name: Du
-    sprite: {fileID: 0}
+  rose: {fileID: 0}
+  slot1: {fileID: 0}
+  messages1: []
+  actors1: []
+  messages2: []
+  actors2: []
+  messages3: []
+  actors3: []
+  messages4: []
+  actors4: []
 --- !u!114 &839671790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5081,21 +5017,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 048720e4f53aa43898b6cbfe539ca8ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  messages:
-  - actorID: 1
-    message: Hier ist deine Rose, ich habe sie gefunden.
-  - actorID: 0
-    message: Oh, vielen Dank! Du hast mir wirklich sehr geholfen. Wie kann ich dir
-      danken?
-  - actorID: 1
-    message: Es ist in Ordnung, ich helfe gerne! Auf Wiedersehen!
-  - actorID: 0
-    message: Auf Wiedersehen!
-  actors:
-  - name: NPC
-    sprite: {fileID: 0}
-  - name: Du
-    sprite: {fileID: 0}
+  rose: {fileID: 0}
+  slot1: {fileID: 0}
+  messages1: []
+  actors1: []
+  messages2: []
+  actors2: []
+  messages3: []
+  actors3: []
+  messages4: []
+  actors4: []
 --- !u!1 &877078065
 GameObject:
   m_ObjectHideFlags: 0
@@ -6727,8 +6658,6 @@ GameObject:
   - component: {fileID: 1402797984}
   - component: {fileID: 1402797983}
   - component: {fileID: 1402797982}
-  - component: {fileID: 1402797981}
-  - component: {fileID: 1402797980}
   - component: {fileID: 1402797979}
   m_Layer: 0
   m_Name: NPCegirl
@@ -6750,54 +6679,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: {fileID: 1402797982}
---- !u!114 &1402797980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1402797978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 048720e4f53aa43898b6cbfe539ca8ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messages:
-  - actorID: 0
-    message: "Oh, du hast sie noch nicht gefunden. Sie ist in der N\xE4he des Eingangs
-      von der Mensa. Viel Erfolg!"
-  actors:
-  - name: Phoebe
-    sprite: {fileID: 0}
-  - name: Du
-    sprite: {fileID: 0}
---- !u!114 &1402797981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1402797978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 048720e4f53aa43898b6cbfe539ca8ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messages:
-  - actorID: 1
-    message: Hier ist deine Rose, ich habe sie gefunden.
-  - actorID: 0
-    message: Oh, vielen Dank! Du hast mir wirklich sehr geholfen. Wie kann ich dir
-      danken?
-  - actorID: 1
-    message: Es ist in Ordnung, ich helfe gerne! Auf Wiedersehen!
-  - actorID: 0
-    message: Auf Wiedersehen!
-  actors:
-  - name: Phoebe
-    sprite: {fileID: 0}
-  - name: Du
-    sprite: {fileID: 0}
 --- !u!114 &1402797982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6810,27 +6691,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 048720e4f53aa43898b6cbfe539ca8ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  messages:
-  - actorID: 0
-    message: "Hallo, ich bin ziemlich verzweifelt. Ich habe zum R\xF6selitag eine
-      Rose geschenkt bekommen und diese nun verloren. K\xF6nntest du mir vielleicht
-      helfen, sie zu finden? "
-  - actorID: 1
-    message: "Nat\xFCrlich, ich helfe dir gerne. Wo hast du die Rose das letzte Mal
-      gesehen?  "
-  - actorID: 0
-    message: "Ich denke in der N\xE4he der Mensa. Ich denke, ich habe sie dort fallen
-      lassen, als ich mein Zn\xFCni gekauft habe. "
-  - actorID: 1
-    message: "Gut, ich werde mich auf die Suche machen und hoffentlich bald zur\xFCck
-      sein."
-  - actorID: 0
-    message: Vielen Dank!
-  actors:
-  - name: Phoebe
-    sprite: {fileID: 0}
-  - name: Du
-    sprite: {fileID: 0}
+  rose: {fileID: 0}
+  slot1: {fileID: 0}
+  messages1: []
+  actors1: []
+  messages2: []
+  actors2: []
+  messages3: []
+  actors3: []
+  messages4: []
+  actors4: []
 --- !u!95 &1402797983
 Animator:
   serializedVersion: 5
@@ -17827,6 +17697,16 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 15
       m_TileSpriteIndex: 29
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 0, y: 0, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 157
+      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -34198,8 +34078,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 25d171c7315474323b607fdf1d5f5e63, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: b46ee5033bc40415994d967e18358390, type: 2}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 6e9380a5e53f97147a08234a1e879cf4, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 2
     m_Data: {fileID: -6891610, guid: ab7fbc7550a68ae459ecf2fb793649a1, type: 3}
@@ -34209,8 +34089,8 @@ Tilemap:
     m_Data: {fileID: 1383938389, guid: c270d6462f6db4cf895b2b522183624f, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 216497023, guid: 328d10f35676eaa42945b5df2a361a9d, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 195182760, guid: 3260ba9f08f05433fbdf5bf9dbec1782, type: 3}
   - m_RefCount: 7
@@ -34518,7 +34398,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: -865333193, guid: 3260ba9f08f05433fbdf5bf9dbec1782, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 2680
+  - m_RefCount: 2681
     m_Data:
       e00: 1
       e01: 0
@@ -34537,7 +34417,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 2680
+  - m_RefCount: 2681
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 0
     m_Data: {r: 0.9987496, g: 0.6841199, b: 0.7784765, a: 1}
@@ -37396,7 +37276,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 16859665, guid: d07da29dfab8f4490b2ffee26f3f0b7b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
