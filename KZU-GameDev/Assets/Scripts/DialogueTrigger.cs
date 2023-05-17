@@ -4,79 +4,234 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    public GameObject rose;
-    public GameObject slot1;
 
-    public static bool roseQuestGoing = false;
-    public static bool roseQuestFinished = false;
+public GameObject trash;
+public GameObject rose;
+public GameObject slot1;
+public GameObject slot2;
+public GameObject npc;
 
-    public Message[] messages1;
-    public Actor[] actors1;
 
-    public Message[] messages2;
-    public Actor[] actors2;
 
-    public Message[] messages3;
-    public Actor[] actors3;
+public static bool roseQuestGoing = false;
+public static bool roseQuestFinished = false;
+public static bool roseQuestStarted = false;
 
-    public Message[] messages4;
-    public Actor[] actors4;
 
-    public void StartDialogue()
-    {
 
-        if(roseQuestFinished == false && roseQuestGoing == false)
-        {
-            FindObjectOfType<DialogueManager>().OpenDialogue(messages1, actors1);
-            // Rose aktivieren
-            // QuestOnGoing true
-        }
+public static bool muellQuestGoing = false;
+public static bool muellQuestFinished = false;
+public static bool muellQuestStarted = false;
 
-        if(rose != null && roseQuestGoing == true)
-        {
-            FindObjectOfType<DialogueManager>().OpenDialogue(messages2, actors2);
-        }
 
-        if(rose == null && roseQuestGoing == true && slot1.transform.childCount > 0)
-        {
-            FindObjectOfType<DialogueManager>().OpenDialogue(messages3, actors3);
-            // Quest finished true
-            // Quest onGoing false
-        }
 
-        if(rose == null && roseQuestFinished == true)
-        {
-            FindObjectOfType<DialogueManager>().OpenDialogue(messages4, actors4);    
-        }
-    }
 
-    void Update()
-    {
-        if(roseQuestFinished == false && roseQuestGoing == false && DialogueManager.isActive == true)
-        {
-            rose.SetActive(true);
-            roseQuestGoing = true;
-        }
-        if(rose == null && roseQuestGoing == true && slot1.transform.childCount > 0 && DialogueManager.isActive == true)
-        {
-            roseQuestFinished = true;
-            roseQuestGoing = false;
-            GameObject.Destroy(slot1.transform.GetChild(0).gameObject);
-        }
-    }
+public Message[] messages1;
+public Actor[] actors1;
 
-}
+public Message[] messages2;
+public Actor[] actors2;
 
-[System.Serializable]
-public class Message 
+public Message[] messages3;
+public Actor[] actors3;
+
+public Message[] messages4;
+public Actor[] actors4;
+
+public void StartDialogue()
 {
-    public int actorID;
-    public string message;
+    if(npc.name == "NPC_Phoebe")
+        {
+            if(roseQuestFinished == false && roseQuestGoing == false)
+            {
+                roseQuestStarted = true;
+                FindObjectOfType<DialogueManager>().OpenDialogue(messages1, actors1);
+
+                 // Rose aktivieren
+            }
+
+            if(rose != null && roseQuestGoing == true)
+            {
+                FindObjectOfType<DialogueManager>().OpenDialogue(messages2, actors2);
+            }
+
+            if(rose == null && roseQuestGoing == true && slot1.transform.childCount > 0)
+            {
+                FindObjectOfType<DialogueManager>().OpenDialogue(messages3, actors3);
+                // Quest finished true
+                // Quest onGoing false
+            }
+
+
+
+
+            if(roseQuestFinished == true)
+
+            {
+
+                FindObjectOfType<DialogueManager>().OpenDialogue(messages4, actors4);
+
+            }
+
+        }
+
+            
+
+
+
+
+
+        if(npc.name == "NPC_Hausmeister")
+
+        {
+
+            if(muellQuestFinished == false && muellQuestGoing == false && roseQuestGoing == false)
+
+            {
+
+                FindObjectOfType<DialogueManager>().OpenDialogue(messages1, actors1);
+
+                muellQuestStarted = true;
+
+                // Trash aktivieren
+
+                // QuestOnGoing true
+
+            }
+
+
+
+
+            if(trash.transform.childCount > 0 && muellQuestGoing == true || (slot1.transform.childCount > 0 && muellQuestGoing == true) || (slot2.transform.childCount > 0 && muellQuestGoing == true))
+
+            {
+
+                FindObjectOfType<DialogueManager>().OpenDialogue(messages2, actors2);
+
+            }
+
+
+
+
+            if(trash.transform.childCount == 0 && muellQuestGoing == true && muellQuestFinished == false && slot1.transform.childCount == 0 && slot2.transform.childCount == 0)
+
+            {
+
+                FindObjectOfType<DialogueManager>().OpenDialogue(messages3, actors3);
+
+                // Quest finished true
+
+                // Quest onGoing false
+
+            }
+
+
+
+
+            if(trash.transform.childCount == 0 && muellQuestGoing == false && muellQuestFinished == true && slot1.transform.childCount == 0 && slot2.transform.childCount == 0)
+
+            {
+
+                FindObjectOfType<DialogueManager>().OpenDialogue(messages4, actors4);
+
+            }
+
+        }
+
+    }
+
+
+
+
+    void Update()
+
+    {
+
+        
+
+        if(roseQuestFinished == false && roseQuestGoing == false && DialogueManager.isActive == true && roseQuestStarted == true)
+
+        {
+
+            rose.SetActive(true);
+
+            roseQuestGoing = true;
+
+            
+
+        }
+
+        if(rose == null && roseQuestGoing == true && slot1.transform.childCount > 0 && DialogueManager.isActive == true)
+
+        {
+
+            roseQuestFinished = true;
+
+            roseQuestGoing = false;
+
+           GameObject.Destroy(slot1.transform.GetChild(0).gameObject);
+
+        }
+
+
+
+
+
+        if(muellQuestFinished == false && muellQuestGoing == false && DialogueManager.isActive == true && muellQuestStarted == true)
+
+        {
+
+            trash.SetActive(true);
+
+            muellQuestGoing = true;
+
+        }
+
+        if(trash.transform.childCount == 0 && muellQuestGoing == true && slot1.transform.childCount == 0 && slot2.transform.childCount == 0 && DialogueManager.isActive == true)
+
+        {
+
+            muellQuestFinished = true;
+
+            muellQuestGoing = false;
+
+        }
+
+        
+
+
+
+
+    }
+
 }
 
+
+
+
 [System.Serializable]
+
+public class Message
+
+{
+
+    public int actorID;
+
+    public string message;
+
+}
+
+
+
+
+[System.Serializable]
+
 public class Actor
+
 {
-    public string name;
-    public Sprite sprite;
+
+    public string name;
+
+    public Sprite sprite;
+
 }
