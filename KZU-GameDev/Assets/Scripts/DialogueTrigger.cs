@@ -42,7 +42,7 @@ public void StartDialogue()
 {
     if(npc.name == "NPC_Phoebe")
         {
-            if(roseQuestFinished == false && roseQuestGoing == false)
+            if(roseQuestFinished == false && roseQuestGoing == false && muellQuestGoing == false)
             {
                 roseQuestStarted = true;
                 FindObjectOfType<DialogueManager>().OpenDialogue(messages1, actors1);
@@ -55,17 +55,18 @@ public void StartDialogue()
                 FindObjectOfType<DialogueManager>().OpenDialogue(messages2, actors2);
             }
 
-            if(rose == null && roseQuestGoing == true && slot1.transform.childCount > 0)
+            if(rose == null && muellQuestGoing == false && slot1.transform.childCount > 0)
             {
                 FindObjectOfType<DialogueManager>().OpenDialogue(messages3, actors3);
                 // Quest finished true
                 // Quest onGoing false
+                GameObject.Destroy(slot1.transform.GetChild(0).gameObject);
             }
 
 
 
 
-            if(roseQuestFinished == true)
+            if(roseQuestFinished == true && slot1.transform.childCount == 0 || muellQuestGoing == true)
 
             {
 
@@ -128,7 +129,7 @@ public void StartDialogue()
 
 
 
-            if(trash.transform.childCount == 0 && muellQuestGoing == false && muellQuestFinished == true && slot1.transform.childCount == 0 && slot2.transform.childCount == 0)
+            if(trash.transform.childCount == 0 && muellQuestGoing == false && muellQuestFinished == true && slot1.transform.childCount == 0 && slot2.transform.childCount == 0 || roseQuestGoing == true)
 
             {
 
@@ -149,7 +150,7 @@ public void StartDialogue()
 
         
 
-        if(roseQuestFinished == false && roseQuestGoing == false && DialogueManager.isActive == true && roseQuestStarted == true)
+        if(roseQuestFinished == false && roseQuestGoing == false && DialogueManager.isActive == true && roseQuestStarted == true && muellQuestGoing == false)
 
         {
 
@@ -161,15 +162,13 @@ public void StartDialogue()
 
         }
 
-        if(rose == null && roseQuestGoing == true && slot1.transform.childCount > 0 && DialogueManager.isActive == true)
+        if(rose == null && roseQuestGoing == true && DialogueManager.isActive == true)
 
         {
 
             roseQuestFinished = true;
 
-            roseQuestGoing = false;
-
-           GameObject.Destroy(slot1.transform.GetChild(0).gameObject);
+           roseQuestGoing = false;
 
         }
 
@@ -177,7 +176,7 @@ public void StartDialogue()
 
 
 
-        if(muellQuestFinished == false && muellQuestGoing == false && DialogueManager.isActive == true && muellQuestStarted == true)
+        if(muellQuestFinished == false && muellQuestGoing == false && DialogueManager.isActive == true && muellQuestStarted == true && roseQuestGoing == false)
 
         {
 
