@@ -61,6 +61,11 @@ public void StartDialogue()
                 // Quest finished true
                 // Quest onGoing false
                 GameObject.Destroy(slot1.transform.GetChild(0).gameObject);
+                
+                if(slot2.transform.childCount > 0)
+                {
+                    GameObject.Destroy(slot2.transform.GetChild(0).gameObject);
+                } 
             }
 
 
