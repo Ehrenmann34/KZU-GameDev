@@ -38,8 +38,25 @@ public Actor[] actors3;
 public Message[] messages4;
 public Actor[] actors4;
 
+public Message[] messages5;
+public Actor[] actors5;
+
+public Message[] messages6;
+public Actor[] actors6;
+
 public void StartDialogue()
 {
+    if(npc.name == "NPC_Horizon")
+        {
+                FindObjectOfType<DialogueManager>().OpenDialogue(messages5, actors5);
+        }
+
+    if(npc.name == "NPC_Strawberry")
+        {
+                FindObjectOfType<DialogueManager>().OpenDialogue(messages6, actors6);
+        }
+
+    
     if(npc.name == "NPC_Phoebe")
         {
             if(roseQuestFinished == false && roseQuestGoing == false && muellQuestGoing == false)
