@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d951c098719494ca89aba7737c1d50d1
+guid: d10dd50dfa5684cc4a8ceb5d846fbdf4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,22 +105,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: baum_pink_0
+      name: "Ba\u0308nke_0"
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 128
-        height: 128
-      alignment: 9
-      pivot: {x: 0.25151518, y: 0.2090909}
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4fe08de95aa54559894e0e19b4e951d
-      internalID: -1894919962
+      spriteID: 8f417c0caa7144817bf53a78b5400642
+      internalID: -1712440894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ba\u0308nke_1"
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f40f20bf968498ea5eab1e4e664267
+      internalID: 947190815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ba\u0308nke_2"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 200d029181bcc4c7ea24436e401c3a73
+      internalID: 1410907424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ba\u0308nke_3"
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f53965ab76a4f5595aeb716cf14b2a
+      internalID: -1873767325
       vertices: []
       indices: 
       edges: []
@@ -136,7 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      baum_pink_0: -1894919962
+      "Ba\u0308nke_2": 1410907424
+      "Ba\u0308nke_0": -1712440894
+      "Ba\u0308nke_1": 947190815
+      "Ba\u0308nke_3": -1873767325
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
