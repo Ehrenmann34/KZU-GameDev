@@ -3,32 +3,54 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CatMovement : MonoBehaviour
-{
-    public Transform[] waypoints;   // Array of waypoints defining the route
-    public float movementSpeed = 2f; // Speed at which the cat moves
-    private int currentWaypoint = 0; // Index of the current waypoint
 
-    private void Update()
-    {
-        MoveToWaypoint();
+{
+    [SerializeField]
+    Transform[] waypoints;
+
+    [SerializeField]
+    float moveSpeed = 5f;
+
+    int waypointIndex = 0;
+    private Vector2 previousPosition;
+
+    void Start() {
+        transform.position = waypoints [waypointIndex].transform.position;
     }
 
-    private void MoveToWaypoint()
+    void Update() {
+        pointsmove ();
+    }
+
+    void pointsmove()
     {
-        if (waypoints.Length == 0) return;
+        transform.position = Vector2.MoveTowards (transform.position, waypoints[waypointIndex].transform.position, moveSpeed * Time.deltaTime);
 
-        // Calculate the direction towards the current waypoint
-        Vector3 direction = waypoints[currentWaypoint].position - transform.position;
-        direction.Normalize();
-
-        // Move the cat towards the waypoint
-        transform.Translate(direction * movementSpeed * Time.deltaTime);
-
-        // If the cat has reached the current waypoint, move to the next one
-        if (Vector3.Distance(transform.position, waypoints[currentWaypoint].position) < 0.1f)
+        if (transform.position == waypoints [waypointIndex].transform.position)
         {
-            currentWaypoint = (currentWaypoint + 1) % waypoints.Length;
+            waypointIndex += 1;
         }
+
+        if (waypointIndex == waypoints.Length)
+        {
+            waypointIndex = 0;
+        }
+    }
+
+    private void FlipCatBasedOnMovement()
+    {
+        Vector2 currentDirection = (Vector2)transform.position - previousPosition;
+
+        if (currentDirection.x < 0)
+        {
+            transform.localScale = new Vector3(-1f, 1f, 1f);
+        }
+        else if (currentDirection.x > 0)
+        {
+            transform.localScale = new Vector3(1f, 1f, 1f);
+        }
+
+        previousPosition = transform.position;
     }
 }
 
