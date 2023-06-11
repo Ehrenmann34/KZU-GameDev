@@ -22,7 +22,7 @@ public static bool roseQuestStarted = false;
 public static bool muellQuestGoing = false;
 public static bool muellQuestFinished = false;
 public static bool muellQuestStarted = false;
-
+public static bool finishedAndTalkedToPeter = false;
 
 
 
@@ -43,6 +43,7 @@ public Actor[] actors5;
 
 public Message[] messages6;
 public Actor[] actors6;
+
 
 public void StartDialogue()
 {
@@ -83,6 +84,12 @@ public void StartDialogue()
                 {
                     GameObject.Destroy(slot2.transform.GetChild(0).gameObject);
                 } 
+            }
+
+                if (rose == null && roseQuestGoing == true && DialogueManager.isActive == true)
+            {
+                roseQuestFinished = true;
+                roseQuestGoing = false;
             }
 
 
@@ -143,15 +150,23 @@ public void StartDialogue()
                 FindObjectOfType<DialogueManager>().OpenDialogue(messages3, actors3);
 
                 // Quest finished true
-
                 // Quest onGoing false
-
             }
 
+            if (trash.transform.childCount == 0 && muellQuestGoing == true && slot1.transform.childCount == 0 && slot2.transform.childCount == 0 && DialogueManager.isActive == true)
+            {
+                muellQuestFinished = true;
+                muellQuestGoing = false;
+
+                StartCoroutine(SetFinishedAndTalkedToPeterDelayed());
+            }
+
+            
 
 
 
-            if(trash.transform.childCount == 0 && muellQuestGoing == false && muellQuestFinished == true && slot1.transform.childCount == 0 && slot2.transform.childCount == 0 || roseQuestGoing == true)
+
+            if(trash.transform.childCount == 0 && muellQuestGoing == false && muellQuestFinished == true && slot1.transform.childCount == 0 && slot2.transform.childCount == 0 && finishedAndTalkedToPeter == true|| roseQuestGoing == true)
 
             {
 
@@ -163,6 +178,12 @@ public void StartDialogue()
 
     }
 
+private IEnumerator SetFinishedAndTalkedToPeterDelayed()
+            {
+                yield return new WaitForSeconds(0.1f); // Wait for 0.1 seconds
+
+                finishedAndTalkedToPeter = true; // Set the variable to true after the delay
+            }
 
 
 
@@ -184,16 +205,6 @@ public void StartDialogue()
 
         }
 
-        if(rose == null && roseQuestGoing == true && DialogueManager.isActive == true)
-
-        {
-
-            roseQuestFinished = true;
-
-           roseQuestGoing = false;
-
-        }
-
 
 
 
@@ -208,27 +219,9 @@ public void StartDialogue()
 
         }
 
-        if(trash.transform.childCount == 0 && muellQuestGoing == true && slot1.transform.childCount == 0 && slot2.transform.childCount == 0 && DialogueManager.isActive == true)
-
-        {
-
-            muellQuestFinished = true;
-
-            muellQuestGoing = false;
-
-        }
-
-        
-
-
-
-
-    }
+    }
 
 }
-
-
-
 
 [System.Serializable]
 
