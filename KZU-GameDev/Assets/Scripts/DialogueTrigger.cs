@@ -25,6 +25,15 @@ public static bool muellQuestStarted = false;
 public static bool finishedAndTalkedToPeter = false;
 
 
+public static bool KugelQuestStarted = false;
+public static bool WalkedThroughKugel = false;
+public static void SetWalkedThroughKugel(bool value)
+{
+    WalkedThroughKugel = value;
+}
+public static bool KugelQuestFinished = false;
+
+
 
 public Message[] messages1;
 public Actor[] actors1;
@@ -38,23 +47,50 @@ public Actor[] actors3;
 public Message[] messages4;
 public Actor[] actors4;
 
-public Message[] messages5;
-public Actor[] actors5;
-
-public Message[] messages6;
-public Actor[] actors6;
 
 
 public void StartDialogue()
 {
     if(npc.name == "NPC_Horizon")
         {
-                FindObjectOfType<DialogueManager>().OpenDialogue(messages5, actors5);
+            FindObjectOfType<DialogueManager>().OpenDialogue(messages1, actors1);
         }
 
     if(npc.name == "NPC_Strawberry")
         {
-                FindObjectOfType<DialogueManager>().OpenDialogue(messages6, actors6);
+            if (KugelQuestStarted == false)
+            {
+                FindObjectOfType<DialogueManager>().OpenDialogue(messages1, actors1);
+                
+                if(DialogueManager.isActive)
+                {
+                    KugelQuestStarted = true;
+                    WalkedThroughKugel = false;
+                }
+            }
+
+            if (KugelQuestStarted == true && WalkedThroughKugel == false)
+            {
+                FindObjectOfType<DialogueManager>().OpenDialogue(messages2, actors2);
+            }
+
+            if (KugelQuestStarted == true && WalkedThroughKugel == true)
+            {
+                FindObjectOfType<DialogueManager>().OpenDialogue(messages3, actors3);
+                
+                if(DialogueManager.isActive)
+                {
+                    KugelQuestFinished = true;
+                }
+            }
+
+            if (KugelQuestFinished == true)
+            {
+                FindObjectOfType<DialogueManager>().OpenDialogue(messages4, actors4);
+            }
+
+            
+            
         }
 
     
@@ -200,9 +236,6 @@ private IEnumerator SetFinishedAndTalkedToPeterDelayed()
             rose.SetActive(true);
 
             roseQuestGoing = true;
-
-            
-
         }
 
 
@@ -218,7 +251,6 @@ private IEnumerator SetFinishedAndTalkedToPeterDelayed()
             muellQuestGoing = true;
 
         }
-
     }
 
 }
