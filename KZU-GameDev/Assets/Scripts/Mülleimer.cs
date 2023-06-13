@@ -27,7 +27,7 @@ public class Mülleimer : MonoBehaviour
 
     void Update()
     {
-        if (isPlayerInArea && Input.GetKeyDown(KeyCode.Space))
+        if (isPlayerInArea && (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter)))
         {
             if (slot1.transform.childCount > 0)
             {

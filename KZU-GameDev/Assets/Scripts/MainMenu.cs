@@ -23,12 +23,14 @@ public class MainMenu : MonoBehaviour
     {
         bubblesSpawn = true;
         fynnSpawn = false;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void SpawnFynn()
     {
         fynnSpawn = true;
         bubblesSpawn = false;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     
 }

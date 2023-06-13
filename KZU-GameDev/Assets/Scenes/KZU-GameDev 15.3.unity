@@ -15153,11 +15153,12 @@ MonoBehaviour:
   - actorID: 1
     message: Klar, ich helfe gerne. Was soll ich tun?
   - actorID: 0
-    message: "Du musst einfach den M\xFCll aufsammeln."
+    message: "Du musst einfach den M\xFCll aufsammeln. Und du hast ja nur zwei H\xE4nde
+      also vergiss nicht den M\xFCll mit der Enter-Taste im M\xFClleimer zu entsorgen."
   - actorID: 1
     message: Okay, ich werde mein Bestes geben.
   - actorID: 0
-    message: Vielen Dank! Melde dihc bei mir, wenn du fertig bist.
+    message: Vielen Dank! Melde dich bei mir, wenn du fertig bist.
   actors1:
   - name: Hauswart Peter
     sprite: {fileID: 21300000, guid: 49fa5d1c1af574a11be7eaffb259b5e8, type: 3}
@@ -15188,11 +15189,11 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 0d5a82a8027014e388f70247b387e144, type: 3}
   messages4:
   - actorID: 0
-    message: Was ist gelb, hat einen Arm und kann nicht fliegen?
+    message: Was steht auf dem Grab eines Hausmeisters?
   - actorID: 1
-    message: Ein Bagger?
+    message: "\xC4hm keine Ahnung, was steht darauf?"
   - actorID: 0
-    message: Nein, deine Mutter!
+    message: '"Er kehrt nie wieder."'
   actors4:
   - name: Hauswart Peter
     sprite: {fileID: 21300000, guid: 49fa5d1c1af574a11be7eaffb259b5e8, type: 3}
@@ -85999,7 +86000,7 @@ MonoBehaviour:
   - {fileID: 619677211}
   - {fileID: 1161421153}
   - {fileID: 644023521}
-  moveSpeed: 1
+  moveSpeed: 0.5
 --- !u!1 &1022252384
 GameObject:
   m_ObjectHideFlags: 0
@@ -98533,11 +98534,11 @@ MonoBehaviour:
   - actorID: 0
     message: Oh Hey, wie geht's?
   - actorID: 1
-    message: Ganz gut Danke! Und dir?
+    message: Ganz gut! Und dir?
   - actorID: 0
     message: Mir geht's fantastisch, willst du wissen warum?
   - actorID: 1
-    message: "\xE4hmm, naja eigentlich muss ich grad ge-..."
+    message: "\xC4hmm, naja eigentlich muss ich gerade ge-..."
   - actorID: 0
     message: Ich habe einen Weg gefunden nur noch gute Noten zu schreiben, ohne grossen
       Aufwand!
@@ -98552,7 +98553,7 @@ MonoBehaviour:
       Schule und hat tats\xE4chlich einen Namen! Es heisst \"Durchschritt\" und wurde
       von Annemie Fontana designed."
   - actorID: 1
-    message: Okay und dass soll wirklich funktionieren?
+    message: Okay und das soll wirklich funktionieren?
   - actorID: 0
     message: Ganz klar! Probiere es doch aus und lasse mich wissen obs geklappt hat!
   - actorID: 1
@@ -98560,7 +98561,7 @@ MonoBehaviour:
       Mathenote zur\xFCck bekommen."
   actors1:
   - name: Strawberry
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 0e8e23db2daa47a4fa4daf6bc23582fc, type: 3}
   - name: Du
     sprite: {fileID: 21300000, guid: 0d5a82a8027014e388f70247b387e144, type: 3}
   messages2:
@@ -98572,7 +98573,7 @@ MonoBehaviour:
     message: Alles klar, lass es mich wissen wenn du's versucht hast!
   actors2:
   - name: Strawberry
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 0e8e23db2daa47a4fa4daf6bc23582fc, type: 3}
   - name: Du
     sprite: {fileID: 21300000, guid: 0d5a82a8027014e388f70247b387e144, type: 3}
   messages3:
@@ -98585,7 +98586,7 @@ MonoBehaviour:
   - actorID: 0
     message: Und?
   - actorID: 1
-    message: EIne Sechs!
+    message: Eine Sechs!
   - actorID: 0
     message: Oh wow, das ist mega!
   - actorID: 1
@@ -98594,10 +98595,10 @@ MonoBehaviour:
   - actorID: 0
     message: Kein Ding. Auf Wiedersehen!
   - actorID: 1
-    message: Ciao, auf Wiedersehen!
+    message: Tschau, auf Wiedersehen!
   actors3:
   - name: Strawberry
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 0e8e23db2daa47a4fa4daf6bc23582fc, type: 3}
   - name: Du
     sprite: {fileID: 21300000, guid: 0d5a82a8027014e388f70247b387e144, type: 3}
   messages4:
@@ -98606,7 +98607,7 @@ MonoBehaviour:
       Gl\xFCck bleibt f\xFCr uns..."
   actors4:
   - name: Strawberry
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 0e8e23db2daa47a4fa4daf6bc23582fc, type: 3}
 --- !u!114 &1425438957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130375,10 +130376,41 @@ MonoBehaviour:
   slot1: {fileID: 1484310240}
   slot2: {fileID: 1512765552}
   npc: {fileID: 1490531099}
-  messages1: []
-  actors1: []
-  messages2: []
-  actors2: []
+  messages1:
+  - actorID: 0
+    message: Hey lange nicht mehr gesehen! Wie geht's?
+  - actorID: 1
+    message: Sehr gut eigentlich, doch irgendwie fehlt mir etwas...
+  - actorID: 0
+    message: Wie meinst du das?
+  - actorID: 1
+    message: Naja ich liebe etwas mit anderen zu unternehmen und es ist jetzt ziemlich
+      lange her, seit ich etwas mit meinen Freunden unternommen habe.
+  - actorID: 0
+    message: "Ohh da habe ich das PERFEKTE f\xFCr dich! Die KZU feiert ja ihren 50.
+      Geburtstag und organisiert deswegen ein grosses Festival vor den Sommerferien.
+      Du musst unbedingt kommen!"
+  - actorID: 1
+    message: "Klingt mega! Was genau ist es denn f\xFCr ein Festival?"
+  - actorID: 0
+    message: "Es hat Foodst\xE4nde, Spiele, alle Sch\xFClerinnen und Sch\xFCler werden
+      dort sein und vorallem wird es auch ganz viel Musik haben! Ich spiele auch
+      mit meiner Band also komm unbedingt schauen!"
+  - actorID: 1
+    message: Aber sicher doch, freue mich schon jetzt! Auf Wiedersehen!
+  - actorID: 0
+    message: "Tsch\xFCss, auf Wiedersehen!"
+  actors1:
+  - name: Horizon
+    sprite: {fileID: 21300000, guid: 8b9b59aeba8bf7e4da91010965cfbf57, type: 3}
+  - name: Du
+    sprite: {fileID: 21300000, guid: 0d5a82a8027014e388f70247b387e144, type: 3}
+  messages2:
+  - actorID: 0
+    message: Vergiss nicht ans KZU-Festival zu kommen!
+  actors2:
+  - name: Horizon
+    sprite: {fileID: 21300000, guid: 8b9b59aeba8bf7e4da91010965cfbf57, type: 3}
   messages3: []
   actors3: []
   messages4: []
@@ -134350,7 +134382,7 @@ MonoBehaviour:
   - {fileID: 112460847}
   - {fileID: 1018424982}
   - {fileID: 1526174435}
-  moveSpeed: 1
+  moveSpeed: 0.5
 --- !u!1 &1628519474
 GameObject:
   m_ObjectHideFlags: 0

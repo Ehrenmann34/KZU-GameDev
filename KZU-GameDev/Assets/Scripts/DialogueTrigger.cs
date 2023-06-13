@@ -34,6 +34,9 @@ public static void SetWalkedThroughKugel(bool value)
 public static bool KugelQuestFinished = false;
 
 
+public static bool FirstTimeTalkingToHorizon = true;
+
+
 
 public Message[] messages1;
 public Actor[] actors1;
@@ -53,7 +56,18 @@ public void StartDialogue()
 {
     if(npc.name == "NPC_Horizon")
         {
-            FindObjectOfType<DialogueManager>().OpenDialogue(messages1, actors1);
+            if(FirstTimeTalkingToHorizon == true)
+            {
+                FindObjectOfType<DialogueManager>().OpenDialogue(messages1, actors1);
+                StartCoroutine(SetFirstTimeTalkingToHorizon());
+            }
+
+            if(FirstTimeTalkingToHorizon == false)
+            {
+                FindObjectOfType<DialogueManager>().OpenDialogue(messages2, actors2);
+            }
+
+            
         }
 
     if(npc.name == "NPC_Strawberry")
@@ -61,12 +75,8 @@ public void StartDialogue()
             if (KugelQuestStarted == false)
             {
                 FindObjectOfType<DialogueManager>().OpenDialogue(messages1, actors1);
-                
-                if(DialogueManager.isActive)
-                {
-                    KugelQuestStarted = true;
-                    WalkedThroughKugel = false;
-                }
+                StartCoroutine(SetKugelQuestStarted());
+                WalkedThroughKugel = false;
             }
 
             if (KugelQuestStarted == true && WalkedThroughKugel == false)
@@ -77,11 +87,7 @@ public void StartDialogue()
             if (KugelQuestStarted == true && WalkedThroughKugel == true)
             {
                 FindObjectOfType<DialogueManager>().OpenDialogue(messages3, actors3);
-                
-                if(DialogueManager.isActive)
-                {
-                    KugelQuestFinished = true;
-                }
+                StartCoroutine(SetKugelQuestFinished());
             }
 
             if (KugelQuestFinished == true)
@@ -219,6 +225,28 @@ private IEnumerator SetFinishedAndTalkedToPeterDelayed()
                 yield return new WaitForSeconds(0.1f); // Wait for 0.1 seconds
 
                 finishedAndTalkedToPeter = true; // Set the variable to true after the delay
+            }
+
+private IEnumerator SetKugelQuestStarted()
+            {
+                yield return new WaitForSeconds(0.1f); // Wait for 0.1 seconds
+
+                KugelQuestStarted = true;
+                Debug.Log("KugelQuestStarted"); // Set the variable to true after the delay
+            }
+
+private IEnumerator SetKugelQuestFinished()
+            {
+                yield return new WaitForSeconds(0.1f); // Wait for 0.1 seconds
+
+                KugelQuestFinished = true; // Set the variable to true after the delay
+            }
+
+private IEnumerator SetFirstTimeTalkingToHorizon()
+            {
+                yield return new WaitForSeconds(0.1f); // Wait for 0.1 seconds
+
+                FirstTimeTalkingToHorizon = false; // Set the variable to true after the delay
             }
 
 
